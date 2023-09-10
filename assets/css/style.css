@@ -1186,14 +1186,14 @@ body {
 
 
   table {
-    width: 100%; /* Set the table width to 100% */
-    border-collapse: collapse; 
-    margin-bottom: 30px;/* Collapse table borders */
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
 }
 
 th, td {
-    padding: 10px; /* Add padding to table cells for spacing */
-    text-align: center; /* Center-align text in cells */
+    padding: 10px;
+    text-align: left;
 }
 
 /* Style the checkmark (✓) using CSS content property */
@@ -1201,5 +1201,18 @@ th, td {
     content: "✓";
     font-weight: bold;
     margin-right: 5px;
-    color: green; /* Change checkmark color to green */
+    color: green;
+}
+
+/* Add a media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+    table {
+        display: block; /* Change the table to a block-level element */
+    }
+
+    th, td {
+        display: block; /* Change table cells to block-level elements */
+        width: 100%; /* Make cells span the full width of the screen */
+        box-sizing: border-box; /* Include padding and borders in cell width */
+    }
 }
