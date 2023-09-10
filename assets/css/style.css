@@ -1183,3 +1183,23 @@ body {
   .credits a:hover {
     color: #fff;
   }
+
+
+  table {
+    width: 100%; /* Set the table width to 100% */
+    border-collapse: collapse; 
+    margin-bottom: 30px;/* Collapse table borders */
+}
+
+th, td {
+    padding: 10px; /* Add padding to table cells for spacing */
+    text-align: center; /* Center-align text in cells */
+}
+
+/* Style the checkmark (✓) using CSS content property */
+.checkmark::before {
+    content: "✓";
+    font-weight: bold;
+    margin-right: 5px;
+    color: green; /* Change checkmark color to green */
+}
